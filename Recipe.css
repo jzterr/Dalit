@@ -1,0 +1,137 @@
+/* 1) Import the desired Google Font (Poppins as an example) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) Body and background styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3e2d0; /* Soft beige background */
+  color: #333;              /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+/* A wrapper to ensure the card is centered */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* The card itself */
+.card {
+  background-color: #fff;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Slightly larger shadow */
+  max-width: 600px; /* Constrain width for readability */
+  width: 100%;
+  overflow: hidden; /* Ensures the image corners are clipped by the card radius */
+}
+
+/* Top image styling */
+.recipe-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Inner content spacing */
+.content {
+  padding: 2rem;
+}
+
+/* Main recipe title */
+.recipe-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+/* Paragraph styling for the description */
+.description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Subheadings (Preparation time, Ingredients, etc.) */
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem; /* Add spacing above new sections */
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+/* 3) Panel style for the preparation time */
+.prep-time {
+  background-color: #fdf8f3; /* Slightly lighter panel background */
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #f1e4d3; /* Subtle border matching the panel background */
+}
+
+/* Lists spacing */
+ul,
+ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Bold text for strong elements */
+li strong {
+  font-weight: 600;
+}
+
+/* Fine-tune spacing between list items */
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Ordered list style (decimal) */
+ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+/* 4) Table styling for the Nutrition section with lines */
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #eee; /* Top border line */
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  padding: 0.75rem 0;
+  text-align: left;
+  font-weight: normal;
+  color: #444;
+}
+
+.nutrition-table th {
+  width: 25%;
+  font-weight: 600;
+}
+
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* If you want a subtle divider line between major sections */
+.content > h2:not(:first-of-type) {
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
